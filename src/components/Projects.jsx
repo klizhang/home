@@ -17,6 +17,7 @@ import { FaGithub } from "react-icons/fa";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { Title, Loading } from "./globalStyledComponents";
 import StyledCard from "./StyledCard";
+import YoutubeEmbed from "./YoutubeEmbed";
 
 const StyledSection = styled.section``;
 
@@ -54,6 +55,14 @@ export default function Projects() {
               <h2>Projects</h2>
               <div className="underline"></div>
             </Title>
+          </Container>
+          <Container>
+            <YoutubeEmbed embedId="-h2VyDS1mY0" />
+            <p>*Source code available upon request*</p>
+          </Container>
+          <Container>
+            <YoutubeEmbed embedId="IEzSttOqsNY" />
+            <p>*Source code available upon request*</p>
           </Container>
           {isLoading && (
             <Container className="d-flex">

@@ -6,16 +6,22 @@ import {
   FaReact,
   FaGitAlt,
   FaGithubSquare,
-  FaLink,
+  FaLinkedin,
+  FaJava,
+  FaPython,
+  FaAngular,
+  FaSwift,
 } from "react-icons/fa";
-import { SiJavascript, SiStyledcomponents, SiRedux } from "react-icons/si";
+import { SiJavascript, SiCplusplus } from "react-icons/si";
 
 // Projects Images (add your images to the images directory and import below)
 import Logo from "./images/logo.svg";
 
 // Hero Images (add your images to the /images directory with the same names)
-import HeroLight from "./images/hero-light.jpg";
-import HeroDark from "./images/hero-dark.jpg";
+// import HeroLight from "./images/hero-light.jpg";
+import HeroLight from "./images/day-pic.jpg";
+// import HeroDark from "./images/hero-dark.jpg";
+import HeroDark from "./images/personal-pic.jpg";
 // If you change the import names above then you need to change the export names below
 export { HeroLight as Light };
 export { HeroDark as Dark };
@@ -24,17 +30,18 @@ export { HeroDark as Dark };
  **************************************************************
   Add your GitHub username (string - "YourUsername") below.
 */
-export const githubUsername = "Your GitHub username here";
+export const githubUsername = "klizhang";
 
 // Blog link icon (imported above)
-export const Blog = <FaLink />;
+// export const Blog = <FaLink />;
+export const Blog = <FaLinkedin />;
 
 /* About Me
  **************************************************************
   Add a second paragraph for the about me section.
 */
 export const moreInfo =
-  "I enjoy learning about technology and helping others use it to improve their lives and be more productive. I built this site with React, Bootstrap, Redux, and the GitHub REST API.";
+  "I am a Master's student studying Computer Science at University of Southern California. I studied Mechanical Engineering in my undergrad at UCSD. I have experience working with Java, Python, C, C++";
 
 /* Skills
  ************************************************************** 
@@ -43,53 +50,69 @@ export const moreInfo =
 export const skillData = [
   {
     id: 1,
-    skill: <FaHtml5 className="display-4" />,
-    name: "HTML5",
+    skill: <FaJava className="display-4" />,
+    name: "Java",
   },
   {
     id: 2,
-    skill: <FaCss3Alt className="display-4" />,
-    name: "CSS3",
+    skill: <FaPython className="display-4" />,
+    name: "Python",
   },
   {
     id: 3,
-    skill: <SiJavascript className="display-4" />,
-    name: "JavaScript",
+    skill: <SiCplusplus className="display-4" />,
+    name: "C++",
   },
   {
     id: 4,
-    skill: <FaBootstrap className="display-4" />,
-    name: "BootStrap",
-  },
-  {
-    id: 5,
     skill: <FaReact className="display-4" />,
     name: "React",
   },
   {
+    id: 5,
+    skill: <FaAngular className="display-4" />,
+    name: "Angular",
+  },
+  {
     id: 6,
-    skill: <SiStyledcomponents className="display-4" />,
-    name: "Styled Components",
+    skill: <FaSwift className="display-4" />,
+    name: "SwiftUI",
   },
   {
     id: 7,
-    skill: <SiRedux className="display-4" />,
-    name: "Redux",
+    skill: <FaHtml5 className="display-4" />,
+    name: "HTML5",
   },
   {
     id: 8,
+    skill: <FaCss3Alt className="display-4" />,
+    name: "CSS3",
+  },
+  {
+    id: 9,
+    skill: <SiJavascript className="display-4" />,
+    name: "JavaScript",
+  },
+  {
+    id: 10,
+    skill: <FaBootstrap className="display-4" />,
+    name: "BootStrap",
+  },
+  {
+    id: 11,
     skill: <FaGitAlt className="display-4" />,
     name: "Git",
   },
   {
-    id: 9,
+    id: 12,
     skill: <FaGithubSquare className="display-4" />,
     name: "GitHub",
   },
+  
 ];
 
 // Resume link (string - "https://YourResumeUrl") - I am using CloudFront to share my resume (https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html)
-export const resume = null;
+export const resume = "https://docs.google.com/document/d/11oGX3-U9OCJhsFxK7-RyiZl1_4RbM0O2/edit?usp=sharing&ouid=101964423201802545068&rtpof=true&sd=true";
 
 /* Projects
  ************************************************************** 
@@ -104,10 +127,3 @@ export const projectCardImages = [
     image: Logo,
   },
 ];
-
-/* Contact Info
- ************************************************************** 
-  Add your formspree endpoint below.
-  https://formspree.io/
-*/
-export const formspreeUrl = "https://formspree.io/f/YourEndpoint";

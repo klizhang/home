@@ -4,7 +4,6 @@ import styled from "styled-components";
 // Components
 import { Container } from "react-bootstrap";
 import { Title } from "./globalStyledComponents";
-import ContactForm from "./ContactForm";
 
 const StyledSection = styled.section`
   min-height: 89vh;
@@ -21,8 +20,10 @@ export default function Contact() {
             <div className="underline"></div>
           </Title>
         </Container>
-        <Container>
-          <ContactForm />
+        <Container className="d-flex justify-content-center">
+          <h4>My email: <a href="mailto:klizhang@usc.edu">klizhang@usc.edu</a></h4>
+        </Container>
+        <Container className="d-flex justify-content-center">
         </Container>
       </StyledSection>
     </Element>
