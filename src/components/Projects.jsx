@@ -60,10 +60,6 @@ export default function Projects() {
             <YoutubeEmbed embedId="-h2VyDS1mY0" />
             <p>*Source code available upon request*</p>
           </Container>
-          <Container>
-            <YoutubeEmbed embedId="IEzSttOqsNY" />
-            <p>*Source code available upon request*</p>
-          </Container>
           {isLoading && (
             <Container className="d-flex">
               <Loading />
